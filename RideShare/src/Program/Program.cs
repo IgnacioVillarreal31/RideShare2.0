@@ -16,15 +16,15 @@ namespace PII_Herencia
             Users pasajero1 = new Passenger("Jorge", "Iglesias", 54246664);
             Users pasajero2 = new Passenger("Ignacio", "Comunista", 78965433);
             Users pasajero3 = new Passenger("ElEmi","Veganosqui", 00000002);
-            Users conductor1 = new Conductor("Ford", "hola", "Augusto", "Sbarbaro", 11122233, 1);
-            Users conductor2 = new Conductor("McQueen", "adios", "Coscu", "Pelado", 22233344, 3);
+            Users conductor1 = new ConductorComun("Ford", "hola", "Augusto", "Sbarbaro", 11122233);
+            Users conductor2 = new ConductorPool("McQueen", "adios", "Coscu", "Pelado", 22233344, 3);
             Rideshare viaje = new Rideshare();
             
-            viaje.Add(conductor1, "New Employee 1! ",@"bill2.jpg");
-            viaje.Add(conductor2, "New Employee 2! ",@"prueba1.jpg");
-            viaje.Add(pasajero1, "New Employee 3! ",@"bill2.jpg");
-            viaje.Add(pasajero2, "New Employee 4! ",@"prueba1.jpg");
-            viaje.Add(pasajero3, "New Employee 5! ",@"prueba1.jpg");
+            viaje.Add(conductor1,@"bill2.jpg");
+            viaje.Add(conductor2,@"prueba1.jpg");
+            viaje.Add(pasajero1,@"foto.jpg");
+            viaje.Add(pasajero2,@"prueba1.jpg");
+            viaje.Add(pasajero3,@"prueba1.jpg");
 
             pasajero1.Qualify(1,"Se");
             pasajero1.Qualify(5,"Se2");

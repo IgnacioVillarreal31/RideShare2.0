@@ -9,10 +9,10 @@ public class Rideshare
 {
     public List<Users> Users = new List<Users>();
 
-    public void Add(Users user, string text, string photo)
+    public void Add(Users user,string foto)
     {
         Users.Add(user);
-        var twitter = new TwitterImage();
-        Console.WriteLine(twitter.PublishToTwitter(text,photo));
+        RegistroTwitter.Registro(user,foto);
+        
     }   
 }

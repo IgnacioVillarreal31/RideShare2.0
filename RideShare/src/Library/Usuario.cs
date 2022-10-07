@@ -30,4 +30,8 @@ public abstract class Users
         Total = Suma/Qualifications.Count;
         return Total;
     }  
+    public virtual string Info ()
+    {
+        return Name;
+    }
 }
