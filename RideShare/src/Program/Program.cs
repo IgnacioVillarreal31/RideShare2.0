@@ -17,11 +17,11 @@ namespace PII_Herencia
             Users pasajero2 = new Passenger("Ignacio", "Comunista", 78965433);
             Users pasajero3 = new Passenger("ElEmi","Veganosqui", 00000002);
             Users conductor1 = new ConductorComun("Ford", "hola", "Augusto", "Sbarbaro", 11122233);
-            Users conductor2 = new ConductorPool("McQueen", "adios", "Coscu", "Pelado", 22233344, 3);
+            Users conductor2 = new ConductorPool("LaRoca", "adios", "LaRoca", "Pelado", 22233344, 3);
             Rideshare viaje = new Rideshare();
             
             viaje.Add(conductor1,@"bill2.jpg");
-            viaje.Add(conductor2,@"prueba1.jpg");
+            viaje.Add(conductor2,@"BRIAN.jpg");
             viaje.Add(pasajero1,@"foto.jpg");
             viaje.Add(pasajero2,@"prueba1.jpg");
             viaje.Add(pasajero3,@"prueba1.jpg");
