@@ -10,4 +10,8 @@ public class ConductorPool : Conductor
     {
         this.CantidadPasajeros = cantidad;
     }
+    public override string Info ()
+    {
+        return $"{Name} {Surname}.\nConductor de tipo {Type} con {CantidadPasajeros} pasajeros.\nBio : {Bio}.";
+    } 
 }

@@ -17,7 +17,7 @@ namespace PII_Herencia
             Users pasajero2 = new Passenger("Ignacio", "Comunista", 78965433);
             Users pasajero3 = new Passenger("ElEmi","Veganosqui", 00000002);
             Users conductor1 = new ConductorComun("Ford", "hola", "Augusto", "Sbarbaro", 11122233);
-            Users conductor2 = new ConductorPool("LaRoca", "adios", "LaRoca", "Pelado", 22233344, 3);
+            Users conductor2 = new ConductorPool("Lambo", "Solo efectivo", "LaRoca", "Jones", 22233344, 20);
             Users conductor3 = new ConductorComun("Ferrari", "No me gusta Toyota", "Lionel", "Messi", 43227653);
             Rideshare viaje = new Rideshare();
             

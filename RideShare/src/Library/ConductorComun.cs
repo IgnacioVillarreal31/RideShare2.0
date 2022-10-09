@@ -10,4 +10,8 @@ public class ConductorComun : Conductor
     {
 
     }
+    public override string Info ()
+    {
+        return $"{Name} {Surname}.\nConductor de tipo {Type}.\nBio : {Bio}.";
+    } 
 }
