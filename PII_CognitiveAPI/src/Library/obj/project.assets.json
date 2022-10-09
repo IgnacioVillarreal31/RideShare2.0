@@ -603,19 +603,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ignac\\.nuget\\packages\\": {}
+    "C:\\Users\\albin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ignac\\OneDrive\\Escritorio\\RideShare2.0\\PII_CognitiveAPI\\src\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\albin\\OneDrive\\Escritorio\\RideShare2.0\\PII_CognitiveAPI\\src\\Library\\Library.csproj",
       "projectName": "CognitiveLibrary",
-      "projectPath": "C:\\Users\\ignac\\OneDrive\\Escritorio\\RideShare2.0\\PII_CognitiveAPI\\src\\Library\\Library.csproj",
-      "packagesPath": "C:\\Users\\ignac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ignac\\OneDrive\\Escritorio\\RideShare2.0\\PII_CognitiveAPI\\src\\Library\\obj\\",
+      "projectPath": "C:\\Users\\albin\\OneDrive\\Escritorio\\RideShare2.0\\PII_CognitiveAPI\\src\\Library\\Library.csproj",
+      "packagesPath": "C:\\Users\\albin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\albin\\OneDrive\\Escritorio\\RideShare2.0\\PII_CognitiveAPI\\src\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ignac\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\albin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -667,7 +667,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
