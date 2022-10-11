@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using TwitterUCU;
+using CognitiveCoreUCU;
+
 namespace Ridesharing;
 
 public abstract class Users
@@ -14,15 +17,16 @@ public abstract class Users
     public string Name {get; set;}
     public string Surname {get; set;}
     public int ID {get; set;}
+    public Boolean foundFace {get; set;}
     
     public void Qualify(int value, string comments)
     {
         Qualifications[value] = comments;
     }
-    public int CalculoCalificacion()
+    public double CalculoCalificacion()
     {
-        int Suma = 0;
-        int Total = 0;
+        double Suma = 0;
+        double Total = 0;
         foreach(var Key in Qualifications)
         {
             Suma += Key.Key;
@@ -34,4 +38,16 @@ public abstract class Users
     {
         return Name;
     }
+
+    public virtual void FoundFace(CognitiveFace cog)
+    {
+        if (cog.FaceFound)
+        {
+            this.foundFace = true;
+        }
+        else
+        {
+            this.foundFace = false;
+        }
+    } 
 }

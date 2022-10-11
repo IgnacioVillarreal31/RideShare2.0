@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 namespace Ridesharing;
+using TwitterUCU;
+using CognitiveCoreUCU;
 
 public class Conductor : Users
 {
@@ -15,4 +17,18 @@ public class Conductor : Users
     {
         return $"{Name}. Bio : {Bio}";
     }
+    public override void FoundFace(CognitiveFace cog)
+    {
+        if (cog.FaceFound)
+        {
+            if (cog.SmileFound)
+            {
+                this.foundFace = true;
+            }
+        }
+        else
+        {
+            this.foundFace = false;
+        }
+    }            
 }

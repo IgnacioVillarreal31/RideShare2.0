@@ -12,31 +12,13 @@ public class RegistroTwitter
         String text = user.Info();
         CognitiveFace cog = new CognitiveFace(false);
         cog.Recognize(foto);
-        if (FoundFace(cog))
+        user.FoundFace(cog);
+        Boolean calidad = user.foundFace;
+
+        if (calidad)
         {
         var twitter = new TwitterImage();
         Console.WriteLine(twitter.PublishToTwitter(text,foto));
         }
-    }   
-        static bool FoundFace(CognitiveFace cog)
-        {
-            if (cog.FaceFound)
-            {
-                Console.WriteLine("Face Found!");
-                if (cog.SmileFound)
-                {
-                    Console.WriteLine("Found a Smile :)");
-                    return true;
-                }
-                else
-                {
-                    Console.WriteLine("No smile found :(");
-                }
-            }
-            else
-            {
-                Console.WriteLine("No Face Found");
-            }
-            return false;
-        }                
+    }     
 }
