@@ -28,8 +28,8 @@ namespace PII_Herencia
             viaje.Add(pasajero2,@"prueba1.jpg");
             viaje.Add(pasajero3,@"1.jpg");
 
-            pasajero1.Qualify(1,"calificacion 1");
-            pasajero1.Qualify(4,"calificacion 2");
+            pasajero1.Calificar(1,"calificacion 1");
+            pasajero1.Calificar(4,"calificacion 2");
             var cali = pasajero1.CalculoCalificacion();
             Console.WriteLine(cali);
         }

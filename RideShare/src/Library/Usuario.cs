@@ -7,7 +7,7 @@ namespace Ridesharing;
 
 public abstract class Users
 {
-    public Dictionary<int, string> Qualifications = new Dictionary<int, string>();
+    public Dictionary<int, string> Calificaciones = new Dictionary<int, string>();
     public Users(string name, string surname, int id)   
     {
         this.Name = name;
@@ -19,19 +19,19 @@ public abstract class Users
     public int ID {get; set;}
     public Boolean foundFace {get; set;}
     
-    public void Qualify(int value, string comments)
+    public void Calificar(int value, string comments)
     {
-        Qualifications[value] = comments;
+        Calificaciones[value] = comments;
     }
     public double CalculoCalificacion()
     {
         double Suma = 0;
         double Total = 0;
-        foreach(var Key in Qualifications)
+        foreach(var Key in Calificaciones)
         {
             Suma += Key.Key;
         }
-        Total = Suma/Qualifications.Count;
+        Total = Suma/Calificaciones.Count;
         return Total;
     }  
     public virtual string Info ()
